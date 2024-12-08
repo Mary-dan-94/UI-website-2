@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>my first code</title>  
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Geist+Mono:wght@100..900&family=Parkinsans:wght@300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    <body>
+       
+     <nav>
+            <ul>
+                <li><a href="#about">about</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+     </nav>
+
+    <section id="about" class="about"> 
+     <div class="empty"></div>
+        <article>
+            <div class="title"> 
+                <h1>Designer Playing with Code</h1>
+            </div>
+            <div class="description">
+                <p>My name is Mary, and I'm a product designer who truly loves what she do. Currently, in my free time, I am learning to code. But on regular days, I enjoy drawing, exploring our deserts, practicing yoga, and trying to remember to breathe</p>
+    </div>
+        </article>
+    </section>
+
+    <section id="services" class="service service-html sticky">
+        <article>
+            <figure>
+                <img src="Images/shape 1.svg" alt="Diamond illustration" width="200" />
+            </figure>
+            <div class="text">
+                <h2>HTML</h2>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+                <a href="https://google.com" aria-label="Learn more about HTML">Learn more</a>
+            </div>
+        </article>
+    </section>
+
+    <section class="service service-css sticky">
+        <article>
+            <figure>
+                <img src="Images/shape 2.png" alt="Octagon illustration" width="200" />
+            </figure>
+            <div class="text">
+                <h2>CSS</h2>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+                <a href="https://google.com" aria-label="Learn more about CSS">Learn more</a>
+            </div>
+        </article>
+    </section>
+
+    <section class="service service-js sticky">
+        <article>
+            <figure>
+                <img src="Images/shape 3.png" alt="Triangle illustration" width="200" />
+            </figure>
+            <div class="text">
+                <h2>JS</h2>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+                <a href="https://google.com" aria-label="Learn more about JS">Learn more</a>
+            </div>
+        </article>
+    </section>
+
+    <section class="contact full-screen">  
+        <a href="https://www.linkedin.com/feed/" target="_blank">DM me on Linkedin</a>
+    </section>
+
+    <script>
+        let emptyElement = document.querySelector ( '.about .empty');
+        let titleElement = document.querySelector ( '.about .title');
+
+        let figureElement = document.querySelectorAll ('figure');
+
+        emptyElement.style.background = '#ECFE03'; 
+        setTimeout(()=>{
+            emptyElement.style.background = '#6C53E7'; 
+        },5*1000)
+     
+    window.addEventListener('mousemove', handleMouseMove);
+
+    function handleMouseMove(event) {
+    emptyElement.style.flexBasis = event.clientX + 'px'; 
+    titleElement.style.flexBasis = event.clientY + 'px'; 
+}
+
+    </script>
+    </body>
+</html>
